@@ -6,7 +6,7 @@ class MoviesController < ApplicationController
   end
 
   def create
-    movie = Movi.create(movie_params)
+    movie = Movie.create(movie_params)
   render json: movie, status: :created
   end
   private
